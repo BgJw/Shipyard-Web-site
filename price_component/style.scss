@@ -1,0 +1,44 @@
+.container__wrapper{
+    height: 650px;
+    margin-top: -100px;
+    background: url('../assets/bgPrice2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+
+    .container__order{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+        h1{
+            font-size: 2rem;
+            font-stretch: expanded;
+            font-kerning: none;
+            line-height: 2.8rem;
+            letter-spacing: 0.2rem;
+        }
+        p{
+            font-size: 1rem;
+            font-stretch: expanded;
+            font-kerning: none;
+            line-height: 2rem;
+            letter-spacing: 0.1rem;
+        }
+ 
+}
+.title__header{
+    line-height: 2.8rem;
+    letter-spacing: 0.2rem;
+
+    h1{
+        font-size: 2.5rem;
+        padding: 3rem;
+    }
+    ul{
+        margin-bottom: 2rem;
+    
+        li{
+            font-size: 1.2rem;
+        }
+    }
+}

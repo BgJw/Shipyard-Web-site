@@ -1,0 +1,236 @@
+// @font-face {
+//     font-family: Montserrat-BlackItalic;
+//     src: url(font/Montserrat-BlackItalic.ttf);
+//   }
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container__wrapper {
+    height: 650px;
+    margin-top: -100px;
+    background: url('../assets/bg2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// navigation 
+
+.navbar{
+    height: 100px;
+    
+    .navbar__wrap {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        section{
+            width: 33%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul{
+            display: flex;
+        }
+    }
+    .nav-link{
+        padding: 0.5rem;
+        font-size: .9rem;
+        font-weight: 600;
+        font-kerning: none;
+        letter-spacing: .07rem;
+
+        color: rgb(0, 0, 0);
+        transition: color .7s ease-in-out;
+    }
+    .nav-brand{
+        color: rgb(0, 0, 0);
+        font-size: 2.2rem;
+    }
+    .nav-link:hover{
+        color:rgb(83, 83, 83);
+    }
+}
+
+// header info 
+
+.container__order{
+        text-align: center;
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 30px;
+            letter-spacing: .9rem;
+        }
+    }
+    .container__btn{
+        padding: 10px 30px 10px 30px;
+        border: 2px solid black;
+        
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+
+        color: black;
+        transition: all .3s ;
+
+        &:hover{
+            border: 2px solid rgb(92, 91, 91);
+            color:rgb(83, 83, 83);
+
+        }
+    }
+
+// main contain about firm
+
+.title{
+    width: 100%;
+    background-color: white;
+}
+        // section 1
+.title__header{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    text-align: center;
+    
+    .title__text{
+        font-size: 1.4rem;
+        font-stretch: expanded;
+        font-kerning: none;
+        line-height: 2.8rem;
+        letter-spacing: 0.1rem;
+
+        span{
+            font-size: 70px;
+            letter-spacing: .5rem;
+        }
+    }
+}
+            // section 2  
+.title__main{
+    height: 550px;
+    background: url('../assets/bgMain.jpg') no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1, a{
+        color: white;
+    }
+    a{
+        border: 2px solid white;
+    }
+}
+.title__footer{
+    margin: 80px;
+
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+
+        letter-spacing: 0.3rem;
+
+        padding: 20px;
+    }
+
+    .title__features{
+
+        li{
+            display: flex;
+            padding: 20px;
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.1rem;
+
+            span{
+                width: 80%;
+                margin-left: 1rem;
+                opacity: 0.6;
+            }
+            h5{
+                width: 20%;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+
+// footer site
+.contacts{
+    height: 400px;
+    background-color:#aea6a2;
+
+    .contact__wrapper{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        padding: 100px;
+
+        div{
+            width: 270px;
+
+            h4, p {
+                margin-bottom: 10px;
+                font-size: 1rem;
+                font-kerning: none;
+                line-height: 2rem;
+                letter-spacing: 0.2rem;
+            }
+
+            a{
+                color: black;
+                margin-right: 1rem;
+            }
+            a:hover, p:hover{
+                opacity: 0.7;
+            }
+
+        }
+    }
+}
+.scroll__btn{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    right: 20px;
+    bottom: 20px;
+    width: 2.3rem;
+    height: 2.3rem;
+
+    font-size: 1.7rem;
+
+    border-radius: 50%;
+    border: none;
+    transform: rotate(0.75turn);
+    cursor: pointer;
+    background-color:rgb(177, 174, 174);
+
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color:rgb(145, 142, 142);
+    }
+}
