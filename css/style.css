@@ -238,17 +238,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 20px;
-  bottom: 20px;
-  width: 2.3rem;
-  height: 2.3rem;
-  font-size: 1.7rem;
-  border-radius: 50%;
+  right: 25px;
+  bottom: 25px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
   border: none;
+  color: black;
   -webkit-transform: rotate(0.75turn);
           transform: rotate(0.75turn);
+  -webkit-transition: color .5s;
+  transition: color .5s;
   cursor: pointer;
-  background-color: #b1aeae;
+  z-index: 8;
 }
 
 .scroll__btn:focus {
@@ -256,6 +258,6 @@
 }
 
 .scroll__btn:hover {
-  background-color: #918e8e;
+  color: rgba(0, 0, 0, 0.592);
 }
 /*# sourceMappingURL=style.css.map */
