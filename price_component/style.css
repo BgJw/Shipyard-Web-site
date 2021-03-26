@@ -1,7 +1,8 @@
 .container__wrapper {
-  height: 650px;
+  min-height: 650px;
+  height: 700px;
   margin-top: -100px;
-  background: url("../assets/bgPrice2.jpg") no-repeat;
+  background: url("../assets/bgPrice.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -45,5 +46,17 @@
 
 .title__header ul li {
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .container__wrapper {
+    margin-top: 0;
+  }
+  .navbar {
+    background-color: white;
+  }
+  .navbar ul .nav-link {
+    font-size: .7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

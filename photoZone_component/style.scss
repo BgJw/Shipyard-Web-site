@@ -1,5 +1,6 @@
 .container__wrapper{
-    height: 650px;
+    min-height: 650px;
+    height: 700px;
     margin-top: -100px;
     background: url('../assets/bgPhotoZone.jpg') no-repeat;
     background-size: cover;
@@ -92,6 +93,20 @@
         }
     }
 }
+@media only screen and (max-width: 920px) {
+    .container__wrapper{
+        margin-top: 0;
+    }
+    .navbar{
+        background-color: white;
+        ul{
+            .nav-link{
+                font-size: .7rem;
+            }
+        }
+    }
+}
+
 .close{
     display: none;
 }

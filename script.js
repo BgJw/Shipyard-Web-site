@@ -2,6 +2,7 @@
 const scrollBtn = document.querySelector('.scroll__btn');
 
 window.addEventListener('scroll', () => {
+
     if(document.documentElement.scrollTop > 600){
         scrollBtn.style.display = 'flex';
     } else {
@@ -20,28 +21,10 @@ scrollBtn.addEventListener('click', () => {
 });
 
 
+// navbar collapse 
 
-// modall function
-const modal = document.querySelector('.modal'),
-   modalImg = modal.querySelector('img');
+document.querySelector('.navbar__btn__close').addEventListener('click', ()=>{
+    document.querySelector('.navbar__wrap').classList.toggle('show');
+    document.querySelector('.navbar').classList.toggle('animation');
 
-
-document.querySelector('.gallery__img').addEventListener('click', e => {
-    if( e.target.matches('img')) {
-
-        modalImg.src = e.target.src;
-        modal.classList.remove('close');
-        modal.classList.add('open');
-        document.documentElement.classList.add('overflow');
-    }
 });
-
-modal.addEventListener('click', e => {
-    if(e.target.matches('.modal') || e.target.matches('.modal_close')){
-       
-        modal.classList.remove('open');
-        modal.classList.add('close');
-        document.documentElement.classList.remove('overflow');
-    }
-})
-
